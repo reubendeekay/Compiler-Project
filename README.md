@@ -33,13 +33,13 @@ The compiler is able to compile the following features of the Go programming lan
 
 The compiler is divided into three main parts:
 
-- the lexer
-- the parser
-- the code generator.
+1. the lexer
+2. the parser
+3. the code generator.
 
-* The lexer is responsible for tokenizing the input source code.
-* The parser is responsible for parsing the tokens and generating an abstract syntax tree.
-* The code generator is responsible for generating assembly code from the abstract syntax tree.
+- The lexer is responsible for tokenizing the input source code.
+- The parser is responsible for parsing the tokens and generating an abstract syntax tree.
+- The code generator is responsible for generating assembly code from the abstract syntax tree.
 
 ## How to run the compiler
 
