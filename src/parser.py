@@ -1455,7 +1455,7 @@ def main():
     yacc.yacc()
     with open(args.output, 'w+') as outfile:
         outfile.write("digraph G{\n")
-        yacc.parse(program, tracking=True)
+        yacc.parse(program,lexer=lexer, tracking=True)
 
 
 if __name__ == '__main__':

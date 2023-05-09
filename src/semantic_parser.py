@@ -209,7 +209,8 @@ def address_generate_compilername(
     }
     return name
 
-#Generates new name for struct
+
+# Generates new name for struct
 def generate_name():
     global struct_count
     struct_count += 1
@@ -4593,7 +4594,7 @@ def main():
     out_ir = open(args.ir, "w+")
     out_st = open(args.st, "w+")
     out_st.write("scope-type,label,type,offset,width,args,place,typedef-map\n")
-    yacc.parse(program, tracking=True)
+    yacc.parse(program, lexer=lexer, tracking=True)
     out_ir.close()
     out_st.close()
     with open("activation.pickle", "wb") as handle:
