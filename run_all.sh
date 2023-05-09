@@ -9,5 +9,8 @@ echo 'Running parser now....'
 echo 'Parser finished'
 echo '-------------------------------------------'
 
-
+echo 'IR generation started'
+./run_ir.sh
+echo 'IR generation finished'
+echo '-------------------------------------------'
 

@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
 set -xe
-if [ -d output ]; then
-    rm -rf output
-fi
-mkdir output
+
 mkdir output/irs
 mkdir output/sts
 
